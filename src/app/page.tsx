@@ -4,7 +4,7 @@ import Image from "next/image";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Script from "next/script";
-
+import SpotifyWidget from "./components/SpotifyWidget";
 
 export default function Home() {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -181,6 +181,7 @@ export default function Home() {
         </p>
       </section>
 
+      <SpotifyWidget />
       <Footer />
     </div>
   );
