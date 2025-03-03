@@ -12,39 +12,19 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
-  title: {
-    en: "LESPURNA - Official Band Website",
-    es: "LESPURNA - Página Oficial de la Banda",
-    default: "LESPURNA - Pàgina Oficial de la Banda",
-  },
-  description: {
-    en: "Discover the music, concerts, and latest updates from LESPURNA. Listen now and check upcoming tour dates.",
-    es: "Descubre la música, los conciertos y las últimas novedades de LESPURNA. Escucha ahora y consulta las próximas fechas de la gira.",
-    default: "Descobreix la música, els concerts i les últimes novetats de LESPURNA. Escolta ara i consulta les pròximes dates de la gira.",
-  },
+export const metadata: Metadata = {
+  title: "LESPURNA - Pàgina Oficial de la Banda",
+  description: "Descobreix la música, els concerts i les últimes novetats de LESPURNA. Escolta ara i consulta les pròximes dates de la gira.",
   openGraph: {
-    title: {
-      en: "LESPURNA - Official Band Website",
-      es: "LESPURNA - Página Oficial de la Banda",
-      default: "LESPURNA - Pàgina Oficial de la Banda",
-    },
-    description: {
-      en: "Discover the music, concerts, and latest updates from LESPURNA. Listen now and check upcoming tour dates.",
-      es: "Descubre la música, los conciertos y las últimas novedades de LESPURNA. Escucha ahora y consulta las próximas fechas de la gira.",
-      default: "Descobreix la música, els concerts i les últimes novetats de LESPURNA. Escolta ara i consulta les pròximes dates de la gira.",
-    },
+    title: "LESPURNA - Pàgina Oficial de la Banda",
+    description: "Descobreix la música, els concerts i les últimes novetats de LESPURNA. Escolta ara i consulta les pròximes dates de la gira.",
     url: "https://lespurna.com",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: {
-          en: "LESPURNA Band Promotional Image",
-          es: "Imagen Promocional de LESPURNA",
-          default: "Imatge Promocional de LESPURNA",
-        },
+        alt: "Imatge Promocional de LESPURNA",
       },
     ],
     type: "website",
@@ -52,25 +32,9 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@lespurna",
-    title: {
-      en: "LESPURNA - Official Band Website",
-      es: "LESPURNA - Página Oficial de la Banda",
-      default: "LESPURNA - Pàgina Oficial de la Banda",
-    },
-    description: {
-      en: "Discover the music, concerts, and latest updates from LESPURNA.",
-      es: "Descubre la música, los conciertos y las últimas novedades de LESPURNA.",
-      default: "Descobreix la música, els concerts i les últimes novetats de LESPURNA.",
-    },
+    title: "LESPURNA - Pàgina Oficial de la Banda",
+    description: "Descobreix la música, els concerts i les últimes novetats de LESPURNA.",
     images: ["/og-image.jpg"],
-  },
-  alternates: {
-    canonical: "https://lespurna.com",
-    languages: {
-      "en": "https://lespurna.com",
-      "es": "https://lespurna.com/es",
-      "ca": "https://lespurna.com/ca",
-    },
   },
 };
 

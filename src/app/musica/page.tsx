@@ -5,6 +5,12 @@ import Image from "next/image";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
+interface Album {
+  image: string;
+  title: string;
+  link: string;
+}
+
 const ITEMS_PER_PAGE = 3;
 
 const fetchMusicData = async (type: "albums" | "singles") => {
@@ -27,8 +33,8 @@ const Pagination = ({ total, current, onPageChange }: { total: number; current: 
 };
 
 export default function Musica() {
-  const [albums, setAlbums] = useState([]);
-  const [singles, setSingles] = useState([]);
+  const [albums, setAlbums] = useState<Album[]>([]);
+  const [singles, setSingles] = useState<Album[]>([]);
   const [albumPage, setAlbumPage] = useState(0);
   const [singlePage, setSinglePage] = useState(0);
 
@@ -47,7 +53,7 @@ export default function Musica() {
       {/* Hero Section */}
       <section className="relative w-full max-h-[400px]">
         <Image
-          src="/guitar_crop2.png"
+          src="/guitar_crop.png"
           alt="Music Hero Image"
           width={1920}
           height={400}

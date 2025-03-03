@@ -1,0 +1,32 @@
+[
+    {
+      "name": "Miriam",
+      "image": "/members/miriam.png",
+      "bio": "Vocalista"
+    },
+    {
+      "name": "Eric",
+      "image": "/members/eric.png",
+      "bio": "Teclista i corista"
+    },
+    {
+      "name": "Aitor",
+      "image": "/members/aitor.png",
+      "bio": "Bateria"
+    },
+    {
+      "name": "Irene",
+      "image": "/members/irene_new.png",
+      "bio": "Guitarrista i corista"
+    },
+    {
+      "name": "Alex",
+      "image": "/members/alex.png",
+      "bio": "Guitarrista"
+    },
+    {
+      "name": "Sergio",
+      "image": "/members/sergio.png",
+      "bio": "Baixista"
+    }
+  ]
