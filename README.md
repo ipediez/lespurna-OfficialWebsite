@@ -26,8 +26,6 @@ npm run dev
 
 ## TODO
 
-- [ ] Change photos to a more compressed format (webp)
-- [ ] Add next-size-adjust meta tag
 - [ ] Add content to the landing page: use at leas 250 words to provide useful information for SEO
 - [ ] Use all words from the page title within the page content
 - [ ] Have more than 1 paragraph in the landing page
