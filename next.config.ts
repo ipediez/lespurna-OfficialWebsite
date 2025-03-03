@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  env: {
+    BANDSINTOWN_API_KEY: process.env.BANDSINTOWN_API_KEY, // ✅ Ensure the API key is accessible
+  },
 };
 
 export default nextConfig;

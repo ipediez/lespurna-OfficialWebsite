@@ -109,7 +109,7 @@ export default function Home() {
           priority
         />
         <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
-          <h1 className="text-8xl font-bold tracking-wide">LESPURNA</h1>
+          <h1 className="text-4xl md:text-8xl font-bold tracking-wide">LESPURNA</h1>
         </div>
       </section>
 
@@ -126,7 +126,7 @@ export default function Home() {
             target="_blank"
             className="mt-4 px-6 py-2 bg-[#962222] hover:bg-[#400b0c] rounded-lg text-lg"
           >
-            Vore ara
+            Mira&apos;l ara
           </a>
         </div>
       </section>
@@ -156,11 +156,28 @@ export default function Home() {
         </div>
       </section>
 
+
+      {/* Contact Section */}
+      <section 
+  className="text-center py-16 relative bg-fixed bg-center bg-cover" 
+  style={{ backgroundImage: "url('/bateria_aitor.PNG')" }} // Replace with your image
+>
+  {/* Dark overlay for readability */}
+  <div className="absolute inset-0 bg-black bg-opacity-75"></div>
+  <div className="relative z-10">
+  <h2 className="text-4xl font-bold mb-4">LESPURNA som...</h2>
+        <p className="max-w-2xl mx-auto text-lg">
+        un grup de música emergent de València. La nostra música és una fusió de hard rock, pop punk i rock alternatiu, amb influències com Smoking Souls, The Warning o Dead Poets Society, entre altres.
+        </p>
+        
+        </div>
+      </section>
+
       {/* About Section */}
       <section id="about" className="p-8 text-center">
-        <h2 className="text-4xl font-bold mb-4">LESPURNA som...</h2>
-        <p className="max-w-2xl mx-auto text-lg">
-          un grup de musica emergent de Valencia.
+      <h2 className="text-4xl font-bold mb-4 text-[#962222]"> CONTRACTACIÓ </h2>
+        <p className="max-w-2xl mx-auto text-lg text-[#962222]">
+        <a href="mailto:contractacio@acontratemps.es" className="text-white">contractacio@acontratemps.es</a>
         </p>
       </section>
 

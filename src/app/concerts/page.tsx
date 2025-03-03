@@ -4,23 +4,29 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { getConcerts } from "../api/getConcerts";
 
-// API Key & Artist ID
-const API_KEY = "API_KEY"; // Replace with your actual API key
-const ARTIST_NAME = "LESPURNA";
+
+// Add this interface at the top of the file, after the imports
+interface Event {
+  datetime: string;
+  venue: {
+    name: string;
+    city: string;
+    country: string;
+  };
+  url: string;
+}
 
 export default function Concerts() {
-  const [events, setEvents] = useState([]);
+  const [events, setEvents] = useState<Event[]>([]);
   const [showUpcoming, setShowUpcoming] = useState(true);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const response = await fetch(
-          `https://rest.bandsintown.com/artists/${ARTIST_NAME}/events?app_id=${API_KEY}&date=all`
-        );
-        const data = await response.json();
+        const data = await getConcerts();
 
         if (Array.isArray(data)) {
           const upcoming = data.filter((event) => new Date(event.datetime) > new Date());
@@ -117,7 +123,7 @@ export default function Concerts() {
             })}
           </div>
         ) : (
-          <p className="text-center text-gray-400">No s'han trobat concerts</p>
+          <p className="text-center text-gray-400">No s&apos;han trobat concerts</p>
         )}
       </section>
 
@@ -128,6 +134,7 @@ export default function Concerts() {
           <a
             href="https://www.bandsintown.com/es/artist-subscribe/15576957-lespurna?affil_code=js_&app_id=js_&bg-color=rgba%280%2C0%2C0%2C1%29&border-color=rgba%2874%2C74%2C74%2C1%29&came_from=700&cta-bg-color=rgba%28150%2C34%2C34%2C1%29&cta-border-color=rgba%2874%2C74%2C74%2C1%29&cta-border-radius=2px&cta-border-width=0px&cta-text-color=rgba%28255%2C255%2C255%2C1%29&font=Helvetica&play-my-city=true&signature=ZZ0948093a8204aa3341cd2b286169aa09dbfbf48712b3dd47ffedc3964a2255e1&spn=0&text-color=rgba%28255%2C255%2C255%2C1%29&utm_campaign=play_my_city&utm_medium=web&utm_source=widget"
             target="_blank"
+            rel="noopener noreferrer"
             className="primary font-bold hover:underline"
           >
             Dis-nos la teua ciutat!

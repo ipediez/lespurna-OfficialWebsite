@@ -22,10 +22,9 @@ const Navbar = () => {
             isOpen ? "block" : "hidden"
           } md:block text-lg`}
         >
-          <li><Link href="musica">Musica</Link></li>
-          <li><Link href="concerts">Concerts</Link></li>
-          <li><Link href="#gallery">Gallery</Link></li>
-          <li><Link href="#about">About</Link></li>
+          <li><Link href="musica">MÚSICA</Link></li>
+          <li><Link href="concerts">CONCERTS</Link></li>
+          <li><Link href="lespurna">LESPURNA</Link></li>
         </ul>
       </div>
     </nav>
