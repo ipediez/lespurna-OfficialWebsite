@@ -101,7 +101,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative w-full">
         <Image
-          src="/portada_color.PNG"
+          src="/portada_color.webp"
           alt="LESPURNA Cover"
           width={3840}
           height={1152}
@@ -135,9 +135,9 @@ export default function Home() {
       <section id="gallery" className="flex justify-center py-6">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {[
-          { src: "/finsAlCel.png", link: "https://www.youtube.com/watch?v=HuwiJClFuw8", text: "Fins al Cel - En viu" },
-          { src: "/laMeuaPau.png", link: "https://www.youtube.com/watch?v=_CPQFVDPoFc", text: "La Meua Pau - Official Music Video" },
-          { src: "/continents.png", link: "https://www.youtube.com/watch?v=1sBJP3zgOs4", text: "Contients - Official Music Video" },
+          { src: "/finsAlCel.webp", link: "https://www.youtube.com/watch?v=HuwiJClFuw8", text: "Fins al Cel - En viu" },
+          { src: "/laMeuaPau.webp", link: "https://www.youtube.com/watch?v=_CPQFVDPoFc", text: "La Meua Pau - Official Music Video" },
+          { src: "/continents.webp", link: "https://www.youtube.com/watch?v=1sBJP3zgOs4", text: "Contients - Official Music Video" },
         ].map((item, index) => (
           <a key={index} href={item.link} target="_blank" className="group relative block w-[290px] h-[290px]">
           <Image
@@ -160,7 +160,7 @@ export default function Home() {
       {/* Contact Section */}
       <section 
   className="text-center py-16 relative bg-fixed bg-center bg-cover" 
-  style={{ backgroundImage: "url('/bateria_aitor.PNG')" }} // Replace with your image
+  style={{ backgroundImage: "url('/bateria_aitor.webp')" }}
 >
   {/* Dark overlay for readability */}
   <div className="absolute inset-0 bg-black bg-opacity-75"></div>

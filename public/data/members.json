@@ -1,32 +1,32 @@
 [
     {
       "name": "Miriam",
-      "image": "/members/miriam.png",
+      "image": "/members/miriam.webp",
       "bio": "Vocalista"
     },
     {
       "name": "Eric",
-      "image": "/members/eric.png",
+      "image": "/members/eric.webp",
       "bio": "Teclista i corista"
     },
     {
       "name": "Aitor",
-      "image": "/members/aitor.png",
+      "image": "/members/aitor.webp",
       "bio": "Bateria"
     },
     {
       "name": "Irene",
-      "image": "/members/irene.png",
+      "image": "/members/irene.webp",
       "bio": "Guitarrista i corista"
     },
     {
       "name": "Alex",
-      "image": "/members/alex.png",
+      "image": "/members/alex.webp",
       "bio": "Guitarrista"
     },
     {
       "name": "Sergio",
-      "image": "/members/sergio.png",
+      "image": "/members/sergio.webp",
       "bio": "Baixista"
     }
   ]

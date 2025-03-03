@@ -41,7 +41,7 @@ export default function LespurnaPage() {
         {/* ✅ Hero Section */}
         <section className="relative w-full max-h-[400px]">
           <Image
-            src="/lespurna-hero-dos.jpg"
+            src="/lespurna-hero.webp"
             alt="LESPURNA Band Hero"
             width={1920}
             height={400}
@@ -54,7 +54,7 @@ export default function LespurnaPage() {
         <section className="flex flex-col md:flex-row items-center py-12 px-6 max-w-6xl mx-auto">
           <div className="w-full md:w-1/2">
             <Image
-              src="/lespurna-band.jpg"
+              src="/lespurna-band.webp"
               alt="LESPURNA Band Image"
               width={600}
               height={400}
@@ -62,7 +62,7 @@ export default function LespurnaPage() {
             />
           </div>
           <div className="w-full md:w-1/2 md:pl-10 text-center md:text-left">
-            <h2 className="text-4xl font-bold text-[#962222] mb-4"> LESPURNA</h2>
+            <h2 className="text-4xl font-bold text-[#962222] mb-4" translate="no"> LESPURNA</h2>
             <p className="text-lg">
               LESPURNA és una formació musical que va iniciar la seva trajectòria a València l&apos;any 2021.<br /><br />
               

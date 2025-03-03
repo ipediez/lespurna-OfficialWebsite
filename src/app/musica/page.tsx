@@ -53,7 +53,7 @@ export default function Musica() {
       {/* Hero Section */}
       <section className="relative w-full max-h-[400px]">
         <Image
-          src="/guitar_crop.png"
+          src="/musica-hero.webp"
           alt="Music Hero Image"
           width={1920}
           height={400}
@@ -95,7 +95,7 @@ export default function Musica() {
 {/* Spotify Widget Section */}
 <section 
   className="text-center py-16 relative bg-fixed bg-center bg-cover" 
-  style={{ backgroundImage: "url('/LLUISMARTI-39.jpg')" }} // Replace with your image
+  style={{ backgroundImage: "url('/spotify-background.webp')" }} 
 >
   {/* Dark overlay for readability */}
   <div className="absolute inset-0 bg-black bg-opacity-50"></div>

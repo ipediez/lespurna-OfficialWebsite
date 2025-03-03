@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('http://localhost:3000'),
   title: "Sobre la banda - LESPURNA",
   description: "Coneix més sobre LESPURNA, la seva música i els membres darrere del seu so.",
   openGraph: {
