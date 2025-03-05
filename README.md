@@ -24,8 +24,10 @@ BANDSINTOWN_API_KEY=your_api_key
 npm run dev
 ```
 
-## TODO
+5. Open the browser and go to `http://localhost:3000` to see the website
 
-- [ ] Too few (4) internal links in the page
-- [ ] Some anchor texts are used more than once, they should be unique
-- [ ] Add external backlinks to the page
+## Deploying
+
+```bash
+npm run build
+```

@@ -176,21 +176,21 @@ export default function Home() {
   <div className="relative z-10">
   <h2 className="text-4xl font-bold mb-4">LESPURNA som...</h2>
         <p className="max-w-2xl mx-auto text-lg">
-        un grup de música emergent de València, amb moltes ganes de crear música i sentir l'energia del directe amb tots vosaltres
+        un grup de música emergent de València, amb moltes ganes de crear música i sentir l&apos;energia del directe amb tots vosaltres
         als escenaris. <a 
           href="/nosaltres" 
           className="hover:text-[#962222] hover:underline transition-colors"
         >Dins de LESPURNA som cinc persones</a> que compartim una passió, i que volquem el nostre temps i esforços en aquest projecte,
-        que s'ha convertit en el nostre somni.
+        que s&apos;ha convertit en el nostre somni.
         </p>
 
         <p className="max-w-2xl mx-auto text-lg"><br></br> 
         <a 
           href="/musica" 
           className="hover:text-[#962222] hover:underline transition-colors"
-        >Et convidem a escoltar la nostra música</a>, en la plataforma de streaming que més t'agrade. Com que tenim influències de grups com Smoking Souls,
+        >Et convidem a escoltar la nostra música</a>, en la plataforma de streaming que més t&apos;agrade. Com que tenim influències de grups com Smoking Souls,
         The Warning o Dead Poets Society, ens agrada etiquetar el nostre so com una fusió de hard rock, pop punk i rock alternatiu.
-        Però, t'animem a que arribes a la teua propia conclusió i ens la facis saber per xarxes socials!
+        Però, t&apos;animem a que arribes a la teua propia conclusió i ens la facis saber per xarxes socials!
         </p>
 
         <p className="max-w-2xl mx-auto text-lg"><br></br> 
