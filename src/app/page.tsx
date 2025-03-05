@@ -167,21 +167,46 @@ export default function Home() {
   <div className="relative z-10">
   <h2 className="text-4xl font-bold mb-4">LESPURNA som...</h2>
         <p className="max-w-2xl mx-auto text-lg">
-        un grup de música emergent de València. La nostra música és una fusió de hard rock, pop punk i rock alternatiu, amb influències com Smoking Souls, The Warning o Dead Poets Society, entre altres.
+        un grup de música emergent de València, amb moltes ganes de crear música i sentir l'energia del directe amb tots vosaltres
+        als escenaris. <a 
+          href="/lespurna" 
+          className="hover:text-[#962222] hover:underline transition-colors"
+        >Dins de LESPURNA som cinc persones</a> que compartim una passió, i que volquem el nostre temps i esforços en aquest projecte,
+        que s'ha convertit en el nostre somni.
+        </p>
+
+        <p className="max-w-2xl mx-auto text-lg"><br></br> 
+        <a 
+          href="/lespurna" 
+          className="hover:text-[#962222] hover:underline transition-colors"
+        >Et convidem a escoltar la nostra música</a>, en la plataforma de streaming que més t'agrade. Com que tenim influències de grups com Smoking Souls,
+        The Warning o Dead Poets Society, ens agrada etiquetar el nostre so com una fusió de hard rock, pop punk i rock alternatiu.
+        Però, t'animem a que arribes a la teua propia conclusió i ens la facis saber per xarxes socials!
+        </p>
+
+        <p className="max-w-2xl mx-auto text-lg"><br></br> 
+        P.D. Vine a
+        <a 
+          href="/lespurna" 
+          className="hover:text-[#962222] hover:underline transition-colors"
+        >un dels nostres concerts</a> i, pot ser que escoltes en primicia un dels nostres nous temes!
         </p>
         
         </div>
       </section>
 
-      {/* About Section */}
-      <section id="about" className="p-8 text-center">
+
+
+      <SpotifyWidget />
+
+            {/* About Section */}
+            <section id="about" className="p-8 text-center">
       <h2 className="text-4xl font-bold mb-4 text-[#962222]"> CONTRACTACIÓ </h2>
         <p className="max-w-2xl mx-auto text-lg text-[#962222]">
         <a href="mailto:contractacio@acontratemps.es" className="text-white">contractacio@acontratemps.es</a>
         </p>
       </section>
 
-      <SpotifyWidget />
       <Footer />
     </div>
   );
