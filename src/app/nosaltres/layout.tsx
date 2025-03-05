@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Sobre la banda - LESPURNA",
     description: "Descobreix la música, els concerts i les últimes novetats de LESPURNA. Escolta ara i consulta les pròximes dates de la gira.",
-    url: "https://lespurna.com/lespurna",
+    url: "https://lespurna.com/nosaltres",
     images: [
       {
         url: "/og-image.jpg",

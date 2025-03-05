@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <nav className="bg-black text-white px-6 py-4">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-      <Link href="/" className="text-2xl font-bold hover:text-gray-400 transition" translate="no">
+      <Link href="/" className="text-2xl font-bold hover:text-[#962222] transition" translate="no">
           LESPURNA
         </Link>
         <button
@@ -22,9 +22,9 @@ const Navbar = () => {
             isOpen ? "block" : "hidden"
           } md:block text-lg`}
         >
-          <li><Link href="musica">MUSICA</Link></li>
-          <li><Link href="concerts">CONCERTS</Link></li>
-          <li><Link href="lespurna">LESPURNA</Link></li>
+          <li><Link href="musica" className="hover:text-[#962222] transition-colors">MUSICA</Link></li>
+          <li><Link href="concerts" className="hover:text-[#962222] transition-colors">CONCERTS</Link></li>
+          <li><Link href="nosaltres" className="hover:text-[#962222] transition-colors">NOSALTRES</Link></li>
         </ul>
       </div>
     </nav>
