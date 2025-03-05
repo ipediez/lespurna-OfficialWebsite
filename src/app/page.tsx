@@ -4,7 +4,7 @@ import Image from "next/image";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Script from "next/script";
-
+import SpotifyWidget from "./components/SpotifyWidget";
 
 export default function Home() {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -101,7 +101,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative w-full">
         <Image
-          src="/portada_color.PNG"
+          src="/portada_color.webp"
           alt="LESPURNA Cover"
           width={3840}
           height={1152}
@@ -135,9 +135,9 @@ export default function Home() {
       <section id="gallery" className="flex justify-center py-6">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {[
-          { src: "/finsAlCel.png", link: "https://www.youtube.com/watch?v=HuwiJClFuw8", text: "Fins al Cel - En viu" },
-          { src: "/laMeuaPau.png", link: "https://www.youtube.com/watch?v=_CPQFVDPoFc", text: "La Meua Pau - Official Music Video" },
-          { src: "/continents.png", link: "https://www.youtube.com/watch?v=1sBJP3zgOs4", text: "Contients - Official Music Video" },
+          { src: "/finsAlCel.webp", link: "https://www.youtube.com/watch?v=HuwiJClFuw8", text: "Fins al Cel - En viu" },
+          { src: "/laMeuaPau.webp", link: "https://www.youtube.com/watch?v=_CPQFVDPoFc", text: "La Meua Pau - Official Music Video" },
+          { src: "/continents.webp", link: "https://www.youtube.com/watch?v=1sBJP3zgOs4", text: "Contients - Official Music Video" },
         ].map((item, index) => (
           <a key={index} href={item.link} target="_blank" className="group relative block w-[290px] h-[290px]">
           <Image
@@ -160,21 +160,47 @@ export default function Home() {
       {/* Contact Section */}
       <section 
   className="text-center py-16 relative bg-fixed bg-center bg-cover" 
-  style={{ backgroundImage: "url('/bateria_aitor.PNG')" }} // Replace with your image
+  style={{ backgroundImage: "url('/bateria_aitor.webp')" }}
 >
   {/* Dark overlay for readability */}
   <div className="absolute inset-0 bg-black bg-opacity-75"></div>
   <div className="relative z-10">
   <h2 className="text-4xl font-bold mb-4">LESPURNA som...</h2>
         <p className="max-w-2xl mx-auto text-lg">
-        un grup de música emergent de València. La nostra música és una fusió de hard rock, pop punk i rock alternatiu, amb influències com Smoking Souls, The Warning o Dead Poets Society, entre altres.
+        un grup de música emergent de València, amb moltes ganes de crear música i sentir l'energia del directe amb tots vosaltres
+        als escenaris. <a 
+          href="/lespurna" 
+          className="hover:text-[#962222] hover:underline transition-colors"
+        >Dins de LESPURNA som cinc persones</a> que compartim una passió, i que volquem el nostre temps i esforços en aquest projecte,
+        que s'ha convertit en el nostre somni.
+        </p>
+
+        <p className="max-w-2xl mx-auto text-lg"><br></br> 
+        <a 
+          href="/lespurna" 
+          className="hover:text-[#962222] hover:underline transition-colors"
+        >Et convidem a escoltar la nostra música</a>, en la plataforma de streaming que més t'agrade. Com que tenim influències de grups com Smoking Souls,
+        The Warning o Dead Poets Society, ens agrada etiquetar el nostre so com una fusió de hard rock, pop punk i rock alternatiu.
+        Però, t'animem a que arribes a la teua propia conclusió i ens la facis saber per xarxes socials!
+        </p>
+
+        <p className="max-w-2xl mx-auto text-lg"><br></br> 
+        P.D. Vine a
+        <a 
+          href="/lespurna" 
+          className="hover:text-[#962222] hover:underline transition-colors"
+        >un dels nostres concerts</a> i, pot ser que escoltes en primicia un dels nostres nous temes!
         </p>
         
         </div>
       </section>
 
-      {/* About Section */}
-      <section id="about" className="p-8 text-center">
+
+
+      <SpotifyWidget />
+
+            {/* About Section */}
+            <section id="about" className="p-8 text-center">
       <h2 className="text-4xl font-bold mb-4 text-[#962222]"> CONTRACTACIÓ </h2>
         <p className="max-w-2xl mx-auto text-lg text-[#962222]">
         <a href="mailto:contractacio@acontratemps.es" className="text-white">contractacio@acontratemps.es</a>

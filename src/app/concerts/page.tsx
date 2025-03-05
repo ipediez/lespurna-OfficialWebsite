@@ -51,7 +51,7 @@ export default function Concerts() {
       {/* Hero Section */}
       <section className="relative w-full max-h-[400px]">
         <Image
-          src="/shows_photo.PNG"
+          src="/shows_photo.webp"
           alt="Concerts Hero Image"
           width={1920}
           height={400}
@@ -116,7 +116,7 @@ export default function Concerts() {
                       showUpcoming ? "bg-[#962222] hover:bg-red-700" : "bg-gray-500 hover:bg-gray-600"
                     }`}
                   >
-                    {showUpcoming ? "Saber mes" : "Jo hi vaig estar!"}
+                    {showUpcoming ? "Saber més" : "Jo hi vaig estar!"}
                   </a>
                 </div>
               );
