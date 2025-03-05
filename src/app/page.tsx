@@ -107,6 +107,7 @@ export default function Home() {
           height={1152}
           className="w-full h-auto object-cover"
           priority
+          title="LESPURNA a un concert en directe a Valencia"
         />
         <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
           <h1 className="text-4xl md:text-8xl font-bold tracking-wide">LESPURNA</h1>
@@ -118,7 +119,14 @@ export default function Home() {
 
       {/* Video Section - Now Full Width */}
       <section id="video" className="relative w-full h-[400px]">
-      <video ref={videoRef} autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover"></video>
+      <video
+      ref={videoRef}
+      autoPlay
+      muted
+      loop
+      playsInline
+      className="absolute inset-0 w-full h-full object-cover"
+      title="Videoclip de Fogueres, de LESPURNA"></video>
         <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-center">
           <h2 className="text-4xl font-bold">FOGUERES</h2>
           <a
@@ -147,6 +155,7 @@ export default function Home() {
             height={290}
             loading='lazy'
             className="w-full h-full object-cover rounded-lg"
+            title={item.text}
           />
           <p className="absolute bottom-0 w-full text-center p-2">
             {item.text}
@@ -157,7 +166,7 @@ export default function Home() {
       </section>
 
 
-      {/* Contact Section */}
+      {/* Bio Section */}
       <section 
   className="text-center py-16 relative bg-fixed bg-center bg-cover" 
   style={{ backgroundImage: "url('/bateria_aitor.webp')" }}
@@ -169,7 +178,7 @@ export default function Home() {
         <p className="max-w-2xl mx-auto text-lg">
         un grup de música emergent de València, amb moltes ganes de crear música i sentir l'energia del directe amb tots vosaltres
         als escenaris. <a 
-          href="/lespurna" 
+          href="/nosaltres" 
           className="hover:text-[#962222] hover:underline transition-colors"
         >Dins de LESPURNA som cinc persones</a> que compartim una passió, i que volquem el nostre temps i esforços en aquest projecte,
         que s'ha convertit en el nostre somni.
@@ -177,7 +186,7 @@ export default function Home() {
 
         <p className="max-w-2xl mx-auto text-lg"><br></br> 
         <a 
-          href="/lespurna" 
+          href="/musica" 
           className="hover:text-[#962222] hover:underline transition-colors"
         >Et convidem a escoltar la nostra música</a>, en la plataforma de streaming que més t'agrade. Com que tenim influències de grups com Smoking Souls,
         The Warning o Dead Poets Society, ens agrada etiquetar el nostre so com una fusió de hard rock, pop punk i rock alternatiu.
@@ -185,9 +194,8 @@ export default function Home() {
         </p>
 
         <p className="max-w-2xl mx-auto text-lg"><br></br> 
-        P.D. Vine a
-        <a 
-          href="/lespurna" 
+        P.D. Vine a <a 
+          href="/concerts" 
           className="hover:text-[#962222] hover:underline transition-colors"
         >un dels nostres concerts</a> i, pot ser que escoltes en primicia un dels nostres nous temes!
         </p>
@@ -199,7 +207,7 @@ export default function Home() {
 
       <SpotifyWidget />
 
-            {/* About Section */}
+            {/* Contact Section */}
             <section id="about" className="p-8 text-center">
       <h2 className="text-4xl font-bold mb-4 text-[#962222]"> CONTRACTACIÓ </h2>
         <p className="max-w-2xl mx-auto text-lg text-[#962222]">

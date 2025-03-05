@@ -54,11 +54,12 @@ export default function Musica() {
       <section className="relative w-full max-h-[400px]">
         <Image
           src="/musica-hero.webp"
-          alt="Music Hero Image"
+          alt="Portada de la seccio de musica de LESPURNA"
           width={1920}
           height={400}
           className="w-full h-[400px] object-cover"
           priority
+          title="Portada de la seccio de musica de LESPURNA"
         />
       </section>
 
@@ -68,7 +69,15 @@ export default function Musica() {
         <div className="flex flex-wrap justify-center gap-6 mt-6">
           {displayedAlbums.map((album, index) => (
             <div key={index} className="text-center">
-              <Image src={album.image} alt={album.title} width={400} height={400} loading='lazy' className="w-[250px] h-[250px] object-cover rounded-lg" />
+              <Image 
+                src={album.image} 
+                alt={album.title} 
+                width={400} 
+                height={400} 
+                loading='lazy' 
+                className="w-[250px] h-[250px] object-cover rounded-lg" 
+                title={`Portada de ${album.title}`}
+              />
               <p className="mt-2 text-lg font-semibold">{album.title}</p>
               <a href={album.link} target="_blank" className="underline text-[#962222] underline-offset-4">Escoltar ara</a>
             </div>
@@ -83,7 +92,15 @@ export default function Musica() {
         <div className="flex flex-wrap justify-center gap-6 mt-6">
           {displayedSingles.map((single, index) => (
             <div key={index} className="text-center">
-              <Image src={single.image} alt={single.title} width={400} height={400} loading='lazy' className="w-[250px] h-[250px] object-cover rounded-lg" />
+              <Image 
+                src={single.image} 
+                alt={single.title} 
+                width={400} 
+                height={400} 
+                loading='lazy' 
+                className="w-[250px] h-[250px] object-cover rounded-lg" 
+                title={`Portada de ${single.title}`}
+              />
               <p className="mt-2 text-lg font-semibold">{single.title}</p>
               <a href={single.link} target="_blank" className="underline text-[#962222] underline-offset-4">Escoltar ara</a>
             </div>

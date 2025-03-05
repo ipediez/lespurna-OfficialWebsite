@@ -47,6 +47,7 @@ export default function LespurnaPage() {
             height={400}
             className="w-full h-[400px] object-cover"
             priority
+            title="LESPURNA preparant-se abans de un concert"
           />
         </section>
   
@@ -59,6 +60,7 @@ export default function LespurnaPage() {
               width={600}
               height={400}
               className="w-full rounded-lg object-cover"
+              title="LESPURNA preparant-se abans de un directe"
             />
           </div>
           <div className="w-full md:w-1/2 md:pl-10 text-center md:text-left">
@@ -97,6 +99,7 @@ export default function LespurnaPage() {
                       width={250}
                       height={250}
                       className="w-[250px] h-[250px] object-cover aspect-square border-0"
+                      title={`Foto de ${member.name}`}
                     />
                     <h3 className="text-2xl font-semibold mt-4 text-[#962222]">{member.name}</h3>
                     <p className="text-gray-300 mt-2 max-w-sm">{member.bio}</p>

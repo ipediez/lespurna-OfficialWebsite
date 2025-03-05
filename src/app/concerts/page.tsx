@@ -57,6 +57,7 @@ export default function Concerts() {
           height={400}
           className="w-full h-[400px] object-cover"
           priority
+          title="LESPURNA a un concert en directe a Valencia"
         />
       </section>
 
