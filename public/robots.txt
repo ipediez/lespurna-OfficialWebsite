@@ -14,7 +14,7 @@ User-agent: Bingbot
 Allow: /
 
 # Host
-Host: http://localhost:3000/
+Host: https://lespurna-official-website.vercel.app
 
 # Sitemaps
-Sitemap: http://localhost:3000/sitemap.xml
+Sitemap: https://lespurna-official-website.vercel.app/sitemap.xml

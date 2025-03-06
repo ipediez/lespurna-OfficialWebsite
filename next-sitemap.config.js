@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-    siteUrl: process.env.SITE_URL || 'http://localhost:3000/', // Change to your actual site URL
+    siteUrl: process.env.SITE_URL || 'https://lespurna-official-website.vercel.app', // Change to your actual site URL
     generateRobotsTxt: true, // Generates a robots.txt file
     generateIndexSitemap: false, // Only needed if you have over 7,000 pages
     sitemapSize: 5000, // Reduce sitemap size for better crawling efficiency
@@ -15,7 +15,7 @@ module.exports = {
   
     // Configure specific priority & frequency per route
     additionalSitemaps: [
-      `${process.env.SITE_URL || 'http://localhost:3000'}/server-sitemap.xml`, // If using a dynamic sitemap
+      `${process.env.SITE_URL || 'https://lespurna-official-website.vercel.app'}/server-sitemap.xml`, // If using a dynamic sitemap
     ],
   
     robotsTxtOptions: {
@@ -35,7 +35,7 @@ module.exports = {
         },
       ],
       additionalSitemaps: [
-        `${process.env.SITE_URL || 'http://localhost:3000'}/sitemap.xml`, // Main Sitemap
+        `${process.env.SITE_URL || 'https://lespurna-official-website.vercel.app'}/sitemap.xml`, // Main Sitemap
       ],
     },
   };

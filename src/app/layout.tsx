@@ -13,13 +13,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('http://localhost:3000'),
+  metadataBase: new URL('https://lespurna-official-website.vercel.app'),
   title: "LESPURNA - Pàgina Oficial de la Banda",
   description: "Descobreix la música, els concerts i les últimes novetats de LESPURNA. Escolta ara i consulta les pròximes dates de la gira.",
   openGraph: {
     title: "LESPURNA - Pàgina Oficial de la Banda",
     description: "Descobreix la música, els concerts i les últimes novetats de LESPURNA. Escolta ara i consulta les pròximes dates de la gira.",
-    url: "https://lespurna.com",
+    url: "https://lespurna-official-website.vercel.app",
     images: [
       {
         url: "/og-image.jpg",
