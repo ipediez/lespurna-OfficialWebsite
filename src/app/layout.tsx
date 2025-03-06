@@ -48,6 +48,7 @@ export default function RootLayout({
     <html lang="ca">
       <head>
         <meta name="next-size-adjust" content="100%" />
+        <meta name="google-site-verification" content="dQ8wWIvZOQZbVaq1MRSbgRNPWi1yaz-EYyEPs9zqYGM" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
