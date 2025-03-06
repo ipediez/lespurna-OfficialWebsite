@@ -22,7 +22,7 @@ const Navbar = () => {
             isOpen ? "block" : "hidden"
           } md:block text-lg`}
         >
-          <li><Link href="musica" className="hover:text-[#962222] transition-colors">MUSICA</Link></li>
+          <li><Link href="musica" className="hover:text-[#962222] transition-colors">MÚSICA</Link></li>
           <li><Link href="concerts" className="hover:text-[#962222] transition-colors">CONCERTS</Link></li>
           <li><Link href="nosaltres" className="hover:text-[#962222] transition-colors">NOSALTRES</Link></li>
         </ul>

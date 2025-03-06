@@ -100,6 +100,7 @@ export default function LespurnaPage() {
                       height={250}
                       className="w-[250px] h-[250px] object-cover aspect-square border-0"
                       title={`Foto de ${member.name}`}
+                      loading="lazy"
                     />
                     <h3 className="text-2xl font-semibold mt-4 text-[#962222]">{member.name}</h3>
                     <p className="text-gray-300 mt-2 max-w-sm">{member.bio}</p>

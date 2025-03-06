@@ -117,7 +117,7 @@ export default function Concerts() {
                       showUpcoming ? "bg-[#962222] hover:bg-red-700" : "bg-gray-500 hover:bg-gray-600"
                     }`}
                   >
-                    {showUpcoming ? "Saber més" : "Jo hi vaig estar!"}
+                    {showUpcoming ? "Saber-ne més" : "Jo hi vaig estar!"}
                   </a>
                 </div>
               );
